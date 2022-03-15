@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./logo.png">
+    <title>Quiz App</title>
+</head>
+<body>
+    <h1 id="title">JavaScript Mini-Quiz</h1>
+    <div class="quiz-container" id="quiz">
+        <div class="progress-wrapper">
+            <div class="progress">
+                <h1>Question <span id="currentQuestion">0</span> of <span id="questionsTotal">0</span>:</h1>
+            </div>
+        </div>
+        <h2 class="quiz-header" id="question">Question text</h2>
+        <ul>
+            <li>
+                <input id="a" type="radio" name="quiz_choice" class="answer" />
+                <label id="a_text" for="a">Question</label>
+            </li>
+            <li>
+                <input id="b" type="radio" name="quiz_choice" class="answer" />
+                <label id="b_text" for="b">Question</label>
+            </li>
+            <li>
+                <input id="c" type="radio" name="quiz_choice" class="answer" />
+                <label id="c_text" for="c">Question</label>
+            </li>
+            <li>
+                <input id="d" type="radio" name="quiz_choice" class="answer" />
+                <label id="d_text" for="d">Question</label>
+            </li>
+        </ul>
+        <button id="submit">Submit</button>
+    </div>
+    <p id="footer">Built with &#10084; by <a href="https://www.davidmvenegas.com" target="_blank" rel="noopener noreferrer">Ahmed Abdulmajid</a></p>
+
+    <script src="./script.js"></script>
+</body>
+</html>

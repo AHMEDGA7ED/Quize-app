@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quiz-container {
+    margin-top: 5rem;
+    position: relative;
+    background-color: white;
+    border-radius: .5rem;
+    box-shadow: 0 0 1.5rem rgba(100, 100, 100, .6);
+    width: 30rem;
+}
+.progress {
+    position: absolute;
+    top: -32.5%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+    color: #111;
+}
+.quiz-header {
+    padding: 1.25rem;
+    padding-top: .25rem;
+    border-bottom: 1px solid #bbb;
+    width: 95%;
+    margin-left: 2.5%;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    font-size: 1.1rem;
+    margin: 1.25rem 0;
+    cursor: pointer;
+}
+label {
+    cursor: pointer;
+}
+button {
+    background-color: #ddd;
+    color: #111;
+    display: block;
+    font-family: inherit;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 0 0 .5rem .5rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+button:hover {
+    background-color: #5fa1ec;
+    color: white;
+}
+button:active {
+    background-color: #4693eb;
+}
+.finished {
+    padding: 4rem;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.8rem;
+}
+.finished-btn {
+    background-color: #ddd;
+    color: #333;
+    display: block;
+    font-family: inherit;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 0 0 .5rem .5rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+#title {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    width: fit-content;
+    color: rgba(34, 34, 34, 0.85);
+    text-align: center;
+}
+#footer {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    color: #222;
+    transform: translateX(-50%);
+    font-size: 1.25rem;
+    text-align: center;
+}
+#footer a {
+    color: #222;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 480px) {
+    .quiz-container {
+        width: 21.5rem;
+    }
+    .progress {
+        position: absolute;
+        top: -30%;
+        font-size: 1rem;
+    }
+    .quiz-header {
+        padding: 1rem .25rem;
+        padding-top: 0;
+        width: 90%;
+        margin-left: 5%;
+        font-size: 1.35rem;
+    }
+    .finished {
+        padding: 2rem;
+        text-align: center;
+        font-size: 1.55rem;
+    }
+    .progress {
+        top: -30%;
+        font-size: 1rem;
+    }
+    #title {
+        top: 2.75rem;
+        font-size: 2.125rem;
+    }
+    #footer {
+        bottom: 4rem;
+        font-size: 1rem;
+        width: fit-content;
+    }
+    #footer a {
+        font-size: 1rem;
+    }
+}
